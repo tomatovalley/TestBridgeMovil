@@ -61,7 +61,7 @@ class AdaptadorPersonalizado(var contexto:Context, items: ArrayList<Project>, va
         holder.proyectoNombre?.text = item?.project
 
         //Tarjetas de proyecto con fondo intercalado
-        if(position % 2 == 1 ){
+        if(position % 2 == 0 ){
             holder?.cardView?.setBackgroundResource(R.drawable.proyecto_tarjeta_uno)
         } else {
             holder?.cardView?.setBackgroundResource(R.drawable.proyecto_tarjeta_dos)

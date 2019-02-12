@@ -33,9 +33,6 @@ class Login : AppCompatActivity() {
         btnEntrar.setOnClickListener {
 
 
-//            jsonObjs.put("email", etUsuario.text.toString())
-//            jsonObjs.put("password", etContrasena.text.toString())
-
             //Autenticacion
             jsonObjs.put("username",etUsuario.text.toString())
             jsonObjs.put("email","")
@@ -45,7 +42,7 @@ class Login : AppCompatActivity() {
             * Usuario cliente
             * User: ray
             * Pass: nomelose
-            * Usuario teser
+            * Usuario tester
             * User: tester
             * Pass: pruebas123
             * */
@@ -57,30 +54,14 @@ class Login : AppCompatActivity() {
 
                     val token = response.get("key")
                     Log.d("ACCESS_TOKEN",token.toString())
-//                    if(tkn?.hayToken()!!) {
                         tkn?.guardarToken(token.toString())
                         // Guardar el usuario
                         UserModel.username = etUsuario.text.toString()
                         startActivity(Intent(this,Dashboard::class.java))
                         finish() //Terminamos esta actividad y ya no podemos regresar a ella
-//                    } else {
-//                        //se queda en activity login
-//                    }
-
-                    // Credenciales para test
-
-                    //   "email": "peter@klaven",
-                    //    "password": "cityslicka"
-
-
-
-                  //  var i = Intent(this, Dashboard::class.java)
-                   // startActivity(i)
 
 
                 }, Response.ErrorListener {
-
-
                     alert("Algo salio mal Login") {
                         title = "Alert"
                         yesButton { toast("No!!!") }

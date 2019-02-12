@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Base64
 import android.util.Log
+import android.widget.Toast
 import com.android.volley.AuthFailureError
 import com.android.volley.Request
 import com.android.volley.Response
@@ -42,6 +43,9 @@ class RegistroDispositivo : AppCompatActivity() {
                         Request.Method.POST, url, jsonObjs,
                         Response.Listener {
                                 response ->
+                            //Terminamos la actividad y regresamos al dashboard
+                            Toast.makeText(this,"Dispositivo agregado",Toast.LENGTH_LONG).show()
+                            finish()
                         }, Response.ErrorListener {
 
                         }) {
@@ -56,7 +60,6 @@ class RegistroDispositivo : AppCompatActivity() {
 
                 }
 
-            //finish()
         }
     }
 
