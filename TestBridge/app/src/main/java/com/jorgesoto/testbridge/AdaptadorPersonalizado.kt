@@ -67,27 +67,6 @@ class AdaptadorPersonalizado(var contexto:Context, items: ArrayList<Project>, va
             holder?.cardView?.setBackgroundResource(R.drawable.proyecto_tarjeta_dos)
         }
 
-
     }
-
-    fun removeItem(index:Int) {
-        copiaProyectos?.removeAt(index)
-        proyectos = ArrayList(copiaProyectos)
-        notifyDataSetChanged()
-    }
-
-//    fun eliminarSeleccion() {
-//        if(itemsSeleccionados?.count()!! > 0) {
-//            //Eliminamos el base al contenido y no la posicion del arreglo
-//            var itemsEliminados = ArrayList<Platillo>()
-//
-//            //Homologamos los items seleccionados con su contenido
-//            for(index in itemsSeleccionados!!) {
-//                itemsEliminados.add(items?.get(index)!!)
-//            }
-//            items?.removeAll(itemsEliminados)
-//            itemsSeleccionados?.clear()
-//        }
-//    }
 
 }

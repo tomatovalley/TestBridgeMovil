@@ -55,12 +55,8 @@ class Login : AppCompatActivity() {
                     val token = response.get("key")
                     Log.d("ACCESS_TOKEN",token.toString())
                         tkn?.guardarToken(token.toString())
-                        // Guardar el usuario
-                        UserModel.username = etUsuario.text.toString()
                         startActivity(Intent(this,Dashboard::class.java))
                         finish() //Terminamos esta actividad y ya no podemos regresar a ella
-
-
                 }, Response.ErrorListener {
                     alert("Algo salio mal Login") {
                         title = "Alert"
