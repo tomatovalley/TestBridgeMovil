@@ -1,5 +1,5 @@
 # TestBridge Aplicación Movíl 
-Repositorio para la aplicación móvil para los testers del proyecto TestBridge.
+Repositorio de la aplicación móvil para los testers del proyecto TestBridge.
 Desarrollado con Kotlin para el sistema operativo Android
 ----
 Con el desarrollo de esta aplicación se aprendiendo y utilizaron por lo menos los siguientes temas:
