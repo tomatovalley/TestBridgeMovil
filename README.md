@@ -2,7 +2,7 @@
 Repositorio de la aplicación móvil para los testers del proyecto TestBridge.
 Desarrollado con Kotlin para el sistema operativo Android
 ----
-Con el desarrollo de esta aplicación se aprendiendo y utilizaron por lo menos los siguientes temas:
+Con el desarrollo de esta aplicación se aprendieron y utilizaron por lo menos los siguientes temas:
 * Flujos de navegacion entre actividades
 * Creación de splash screen
 * Modelo de datos con Data Classes
